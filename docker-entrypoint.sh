@@ -12,7 +12,7 @@ if [ "$1" = "yarn" ]; then
     rm -rf node_modules/
 
     echo "Let's start !"
-    yarn create next-app ./ -e default
+    yarn create next-app ./ -e ${TEMPLATE:-default}
 
   elif [ ! -d "node_modules" ]; then
 
