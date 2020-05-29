@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ea
 
-if [ "$1" = "yarn" ]; then
+if [ "$1" = "next" ]; then
 
   if [ ! -f "package.json" ]; then
 
