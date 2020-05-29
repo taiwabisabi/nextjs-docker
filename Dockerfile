@@ -1,5 +1,7 @@
 FROM node:12
 
+RUN yarn global add next
+
 WORKDIR /srv/app
 
 VOLUME /srv/app
