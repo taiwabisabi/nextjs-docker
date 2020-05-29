@@ -1,7 +1,5 @@
 FROM node:12
 
-RUN yarn global add next
-
 WORKDIR /srv/app
 
 VOLUME /srv/app
@@ -11,4 +9,4 @@ RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
     && ln -s /usr/local/bin/docker-entrypoint.sh /
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-CMD ["next", "dev"]
+CMD ["yarn", "dev"]

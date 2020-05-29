@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ea
 
-if [ "$1" = "next" ]; then
+if [ "$1" = "yarn" ]; then
 
   if [ ! -f "package.json" ]; then
 
@@ -12,7 +12,7 @@ if [ "$1" = "next" ]; then
     rm -rf node_modules/
 
     echo "Let's start !"
-    yarn create next-app ./ -e ${TEMPLATE:-default}
+    yarn create next-app ./ -e default
 
   elif [ ! -d "node_modules" ]; then
 
