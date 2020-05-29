@@ -3,6 +3,8 @@ set -ea
 
 if [ "$1" = "yarn" ]; then
 
+  yarn config set cache-folder $YARN_CACHE_FOLDER
+
   if [ ! -f "package.json" ]; then
 
     echo "No project found at /srv/app"
